@@ -1,22 +1,23 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int n=500;
-    int i{},j{},k{};
-    for(i=0;i<n;i++){
-        for(k=0;k<i;k++){
+    int n{},i{},j{},k{};
+    cin>>n;
+    for(i=1;i<=n;i++){
+        for(k=2*n-i;k>1;k--){
             cout<<" ";
         }
-        for(j=0;j<n-i;j++){
+        for(j=1;j<=(2*i)-1;j++){
             cout<<"*";
         }
         cout<<endl;
     }
-    for(i=1;i<n;i++){
-        for(k=n-i-1;k>0;k--){
+    
+    for(i=n-1;i>=1;i--){
+        for(k=2*n-i;k>1;k--){
             cout<<" ";
         }
-        for(j=0;j<i+1;j++){
+        for(j=1;j<=(2*i)-1;j++){
             cout<<"*";
         }
         cout<<endl;
