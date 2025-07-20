@@ -19,5 +19,11 @@ int main(){
     kirat.health=100;
     kirat.xp=15;
     kirat.talk("Hi there!");
+
+    Player *enemy=new Player();
+    enemy->name="Vansh";
+    enemy->health=99;
+    (*enemy).xp=20;
+    (*enemy).talk("I will destroy you!");
     return 0;
 }
